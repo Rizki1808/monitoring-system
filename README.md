@@ -14,7 +14,7 @@ Before you begin, ensure you have met the following requirements:
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/your-username/monitoring-system.git
+    git clone https://github.com/Rizki1808/monitoring-system.git
     cd monitoring-system
     ```
 
@@ -53,6 +53,7 @@ Before you begin, ensure you have met the following requirements:
     npm start
     ```
 
+<<<<<<< HEAD
 5. Open your browser and visit [http://localhost:3001](http://localhost:3001), [http://localhost:3002](http://localhost:3002), and [http://localhost:3003](http://localhost:3003) to view the monitoring dashboards for each instance.
 
 ## Configuration
@@ -61,3 +62,18 @@ Make sure RabbitMQ is running locally on the default port (5672). If RabbitMQ is
 
 ```javascript
 const connection = await amqp.connect('amqp://localhost');
+=======
+4. Open your browser and visit 
+[http://localhost:3001](http://localhost:3001), 
+[http://localhost:3002](http://localhost:3002), 
+[http://localhost:3003](http://localhost:3003) 
+to view the monitoring dashboards for each instance.
+
+## Configuration
+
+Make sure RabbitMQ is running locally on the default port (15672 or 5672). If RabbitMQ is running on a different host or port, update the connection details in the `server.js` file.
+
+```javascript
+const connection = await amqp.connect('amqp://localhost');
+
+>>>>>>> 0763c184d9c047f64d18fa8974b6b341341b9bbc
