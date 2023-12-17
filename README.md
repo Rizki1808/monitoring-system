@@ -43,3 +43,6 @@ Make sure RabbitMQ is running locally on the default port (15672 or 5672). If Ra
 
 ```javascript
 const connection = await amqp.connect('amqp://localhost');
+
+![image](https://github.com/Rizki1808/monitoring-system/assets/124553947/df0305d0-2b72-4209-a2a8-864dca32ec69)
+
