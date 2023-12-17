@@ -31,7 +31,11 @@ Before you begin, ensure you have met the following requirements:
     npm start
     ```
 
-4. Open your browser and visit [http://localhost:3001](http://localhost:3001) to view the monitoring dashboard.
+4. Open your browser and visit 
+[http://localhost:3001](http://localhost:3001), 
+[http://localhost:3002](http://localhost:3002), 
+[http://localhost:3003](http://localhost:3003) 
+to view the monitoring dashboards for each instance.
 
 ## Configuration
 
