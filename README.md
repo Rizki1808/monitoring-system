@@ -39,7 +39,7 @@ to view the monitoring dashboards for each instance.
 
 ## Configuration
 
-Make sure RabbitMQ is running locally on the default port (15672). If RabbitMQ is running on a different host or port, update the connection details in the `server.js` file.
+Make sure RabbitMQ is running locally on the default port (15672 or 5672). If RabbitMQ is running on a different host or port, update the connection details in the `server.js` file.
 
 ```javascript
 const connection = await amqp.connect('amqp://localhost');
