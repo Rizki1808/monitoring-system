@@ -1,5 +1,4 @@
 # Monitoring System with WebSocket and RabbitMQ
-Projek UAS WebDev
 
 This project implements a monitoring system using WebSocket for real-time updates and RabbitMQ as a message broker to broadcast random temperature data to connected clients.
 
@@ -25,17 +24,40 @@ Before you begin, ensure you have met the following requirements:
     npm install
     ```
 
-3. Start the server:
+3. **Start RabbitMQ Server:**
+
+    Make sure RabbitMQ is running locally on the default port (5672). If not, you can start the RabbitMQ server based on your operating system:
+
+    - **Linux:**
+      ```bash
+      sudo service rabbitmq-server start
+      ```
+
+    - **Windows:**
+      ```powershell
+      rabbitmq-server
+      ```
+
+    - **macOS:**
+      ```bash
+      rabbitmq-server
+      ```
+
+    After starting RabbitMQ, you can access the RabbitMQ Management UI by visiting [http://localhost:15672](http://localhost:15672). Use the default credentials (guest/guest) to log in.
+
+4. **Start the Monitoring System:**
+
+    Start the server:
 
     ```bash
     npm start
     ```
 
-4. Open your browser and visit [http://localhost:3001](http://localhost:3001) to view the monitoring dashboard.
+5. Open your browser and visit [http://localhost:3001](http://localhost:3001), [http://localhost:3002](http://localhost:3002), and [http://localhost:3003](http://localhost:3003) to view the monitoring dashboards for each instance.
 
 ## Configuration
 
-Make sure RabbitMQ is running locally on the default port (15672). If RabbitMQ is running on a different host or port, update the connection details in the `server.js` file.
+Make sure RabbitMQ is running locally on the default port (5672). If RabbitMQ is running on a different host or port, update the connection details in the `server.js` file.
 
 ```javascript
 const connection = await amqp.connect('amqp://localhost');
